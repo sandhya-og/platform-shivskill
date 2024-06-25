@@ -1,0 +1,80 @@
+#benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: cover;
+}
+
+#vision {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.vision-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vision-text {
+    position: absolute;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: right;
+}
+
+.h {
+    font-family: "bodoni MT Black";
+}
+
+.p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    #benefits {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .vision-container {
+        height: auto;
+    }
+    .vision-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .vision-text {
+        position: relative;
+        text-align: left;
+        top: auto;
+        right: auto;
+        padding: 1rem;
+    }
+    .bg-black {
+        text-align: center;
+    }
+    .bg-black img {
+        margin: 0 auto;
+        display: block;
+    }
+    .bg-black h2 {
+        text-align: center;
+    }
+    .bg-black p {
+        text-align: left;
+        padding: 0 1rem;
+    }
+}

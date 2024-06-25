@@ -1,0 +1,27 @@
+/* platform/src/styles.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    overflow: auto;
+}
+
+@keyframes moveStars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 5000px 1000px;
+    }
+}
+
+* {
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    animation: moveStars 70s linear infinite;
+}

@@ -1,0 +1,40 @@
+<!--platform/src/app/app.component.html-->
+
+<nav class="bg-white fixed top-0 w-full z-50" data-aos="fade-down">
+  <div class="w-full bg-black">
+    <div class="container mx-auto flex justify-between items-center px-4 py-1">
+      <div class="flex items-center">
+        <img [src]="'assets/images/Final logo.jpg'" alt="image" class="h-12 mr-2">
+        <span class="text-white text-small font-semibold">ShivSkill</span>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="sm:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Menu links -->
+      <ul class="hidden sm:flex space-x-8">
+        <li><a href="#objectives" class="font-extrabold transition duration-300">Home</a></li>
+        <li><a href="#benefits" class="font-extrabold transition duration-300">Objectives</a></li>
+        <li><a href="#roadmap" class="font-extrabold transition duration-300">Benefits</a></li>
+      </ul>
+      <div class="hidden sm:flex items-center">
+        <a routerLink="/join-us" class="ml-4 bg-blue-500 text-white py-2 px-4 rounded-full font-semibold hover:bg-blue-600 transition duration-300">Join Us</a>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden sm:hidden bg-black">
+    <ul class="px-4 pt-2 pb-4 space-y-1">
+      <li><a href="#objectives" class="block font-extrabold text-white transition duration-300">Home</a></li>
+      <li><a href="#benefits" class="block font-extrabold text-white transition duration-300">Objectives</a></li>
+      <li><a href="#roadmap" class="block font-extrabold text-white transition duration-300">Benefits</a></li>
+      <li><a routerLink="/join-us" class="block bg-blue-500 text-white py-2 px-4 rounded-full font-semibold hover:bg-blue-600 transition duration-300">Join Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

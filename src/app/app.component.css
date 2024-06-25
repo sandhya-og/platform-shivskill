@@ -1,0 +1,40 @@
+/* platform/src/app/app.component.css */
+
+.text {
+    font-size: large;
+    color: #ffffff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #729aeb;
+}
+
+
+/* Responsive menu */
+
+@media (max-width: 640px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
